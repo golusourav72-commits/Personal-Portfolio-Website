@@ -7,7 +7,7 @@ Designed and built a personal portfolio website from scratch using HTML, CSS, an
 
 ## About
 
-I'm a second-year B.Tech Computer Science & Engineering student at Himachal Pradesh Technical University (HPTU), Hamirpur. This portfolio highlights my work across DSA, full-stack development (MERN), and community leadership roles like GfG Campus Mantri and founder of CoreDevs India.
+I'm a second-year B.Tech Computer Science & Engineering student at Himachal Pradesh Technical University (HPTU), Hamirpur. This portfolio highlights my work across DSA, full-stack development (MERN), and community leadership roles like GfG Campus Mantri .
 
 ## Built With
 
