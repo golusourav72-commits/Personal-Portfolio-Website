@@ -265,6 +265,122 @@
       font-size: 0.72rem; color: var(--accent2);
     }
 
+    /* ── EDUCATION ── */
+    #education { background: var(--navy); }
+    .education-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+    .education-card {
+      display: flex;
+      gap: 1.5rem;
+      padding: 2rem;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: rgba(255,255,255,0.02);
+      transition: border-color 0.25s, transform 0.25s, box-shadow 0.25s;
+    }
+    .education-card:hover {
+      border-color: rgba(79,142,247,0.4);
+      transform: translateY(-3px);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+    }
+    .education-icon { font-size: 2rem; flex-shrink: 0; }
+    .education-top {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 0.5rem;
+      margin-bottom: 0.4rem;
+    }
+    .education-info h3 {
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: var(--white);
+    }
+    .education-date {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.75rem;
+      color: var(--accent);
+      white-space: nowrap;
+    }
+    .education-degree {
+      color: var(--accent2);
+      font-size: 0.9rem;
+      font-weight: 500;
+      margin-bottom: 0.75rem;
+    }
+    .education-info p {
+      color: var(--slate);
+      font-size: 0.9rem;
+      line-height: 1.7;
+      margin-bottom: 0.9rem;
+    }
+
+    /* ── CERTIFICATIONS ── */
+    #certifications { background: var(--navy-2); }
+    .cert-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+    .cert-card {
+      padding: 1.75rem;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: rgba(255,255,255,0.02);
+      transition: border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+    }
+    .cert-card:hover {
+      border-color: var(--accent);
+      box-shadow: 0 0 30px rgba(79,142,247,0.1);
+      transform: translateY(-4px);
+    }
+    .cert-icon { font-size: 1.8rem; margin-bottom: 1rem; }
+    .cert-card h3 {
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: var(--white);
+      margin-bottom: 0.5rem;
+      line-height: 1.4;
+    }
+    .cert-issuer {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      color: var(--slate);
+      margin-bottom: 0.75rem;
+    }
+
+    /* ── GITHUB ACTIVITY ── */
+    #github { background: var(--navy-3); }
+    .github-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+    .github-card {
+      width: 100%;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+    }
+    .github-graph {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      margin-top: 1.5rem;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.02);
+      padding: 1rem;
+    }
+
     /* ── PROJECTS ── */
     #projects { background: var(--navy-2); }
     .projects-grid {
@@ -313,6 +429,28 @@
       font-size: 0.72rem; color: var(--slate);
     }
     .project-tech span:not(:last-child)::after { content: '·'; margin-left: 0.5rem; }
+
+    .project-card-featured {
+      border-color: rgba(79,142,247,0.35);
+      background: linear-gradient(160deg, rgba(79,142,247,0.06), rgba(255,255,255,0.02));
+    }
+    .project-card-featured::before { opacity: 1; }
+
+    .project-live-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      width: fit-content;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.68rem;
+      letter-spacing: 0.5px;
+      color: #4ADE80;
+      background: rgba(74, 222, 128, 0.1);
+      border: 1px solid rgba(74, 222, 128, 0.3);
+      padding: 3px 10px;
+      border-radius: 20px;
+      margin-bottom: 0.9rem;
+    }
 
     /* ── EXPERIENCE ── */
     #experience { background: var(--navy); }
